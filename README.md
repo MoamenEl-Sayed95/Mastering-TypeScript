@@ -11,3 +11,5 @@
 5- Union Types
 
 6- Tuples and Enums
+
+7- Interfaces
