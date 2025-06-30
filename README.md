@@ -1,6 +1,6 @@
 # Mastering-TypeScript
 
-1- Variables
+1- Type Annotation Basics - Variables
 
 2- Functions
 
