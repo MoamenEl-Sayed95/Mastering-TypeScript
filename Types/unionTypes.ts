@@ -44,6 +44,6 @@ mood = 'Sad';
 type DayOfWeek = "Monday" | 'Tuesday' | 'Wednesday' | "Thursday" |
     'Friday' | "Saturday" | "Sunday";
 
-let today: DayOfWeek = 'weds';
+// let today: DayOfWeek = 'weds';
 
 export { };
