@@ -1,6 +1,7 @@
 "use strict";
-// const btn = document.getElementById("btn")!;
-// console.log(btn);
-// btn.addEventListener("click",function(){
-//     alert("CLICKED!!!")
-// });
+var btn = document.getElementById("btn");
+var input = document.getElementById("todoinput");
+btn.addEventListener("click", function () {
+    alert(input.value);
+    input.value = "";
+});
