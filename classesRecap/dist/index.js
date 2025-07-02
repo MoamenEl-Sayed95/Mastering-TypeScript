@@ -1,5 +1,5 @@
 class Player {
-  static description= "Player In Our Game";  
+  static description = "Player In Our Game";
   #score = 0;
   #numLives = 10;
   constructor(first, last) {
@@ -7,7 +7,7 @@ class Player {
     this.last = last;
     this.#secret();
   }
-  static randomPlayer(){
+  static randomPlayer() {
     return new Player("Andy", "Samberg");
   }
   get fullName() {
@@ -43,9 +43,13 @@ class Player {
 }
 
 class AdminPlayer extends Player {
-    isAdmin = true;
+  constructor(first, last, powers) {
+    super(first, last);
+    this.powers = powers;
+  }
+  isAdmin = true;
 }
-const admin = new AdminPlayer();
+const admin = new AdminPlayer("admin", "mCadmin",["delete","restore"]);
 
 // const player1 = new Player("blue", "steele");
 // player1.taunt();
