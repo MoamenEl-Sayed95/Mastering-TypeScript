@@ -36,10 +36,11 @@ const palyer1 = new Player("blue","steele");
 // palyer1.loseLife();
 // console.log(palyer1.numLives);
 // palyer1._score = -281731298;
+
 console.log(palyer1.getScore());
 console.log(palyer1.updateScore(28));
 console.log(palyer1.getScore());
-console.log(palyer1);
+console.log(palyer1.fullName);
 
 // const palyer2 = new Player("charlie","brown");
 // palyer2.taunt();
