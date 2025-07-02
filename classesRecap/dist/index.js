@@ -1,10 +1,14 @@
 class Player {
+  static description= "Player In Our Game";  
   #score = 0;
   #numLives = 10;
   constructor(first, last) {
     this.first = first;
     this.last = last;
     this.#secret();
+  }
+  static randomPlayer(){
+    return new Player("Andy", "Samberg");
   }
   get fullName() {
     return `${this.first} ${this.last}`;
@@ -38,7 +42,12 @@ class Player {
   }
 }
 
-const player1 = new Player("blue", "steele");
+class AdminPlayer extends Player {
+    isAdmin = true;
+}
+const admin = new AdminPlayer();
+
+// const player1 = new Player("blue", "steele");
 // player1.taunt();
 // console.log(player1.first);
 // console.log(player1.last);
@@ -64,6 +73,6 @@ const player1 = new Player("blue", "steele");
 // player1.score = 213987;
 // player1.fullName;
 
-console.log(player1.fullName);
-player1.fullName = "Amy Adams";
-console.log(player1);
+// console.log(player1.fullName);
+// player1.fullName = "Amy Adams";
+// console.log(player1);
