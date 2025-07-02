@@ -40,6 +40,7 @@ const palyer1 = new Player("blue","steele");
 console.log(palyer1.getScore());
 console.log(palyer1.updateScore(28));
 console.log(palyer1.getScore());
+
 console.log(palyer1.fullName);
 
 // const palyer2 = new Player("charlie","brown");
