@@ -1,11 +1,17 @@
 class Player {
-    readonly first: string;
-    readonly last: string;
-    score: number = 0;
+    public readonly first: string;
+    public readonly last: string;
+    private score: number = 0;
+
     constructor(first: string, last: string) {
         this.first = first;
         this.last = last;
     }
+    secretMethod(): void {
+        console.log("SECRET METHOD!!");
+    }
+
 }
-const elton = new Player("Elton","Steele");
-elton.score = 23;
+
+const elton = new Player("Elton", "Steele");
+elton.secretMethod();
