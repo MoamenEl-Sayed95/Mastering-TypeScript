@@ -43,4 +43,35 @@ function merge(object1, object2) {
     return __assign(__assign({}, object1), object2);
 }
 var comboObj = merge({ name: "colt" }, { pets: ["blue", "elton"] });
-// merge<{ name: string }, { pets: string[] }>({ name: "colt" }, { pets: ["blue", "elton"] })
+console.log(merge({ name: "Colt" }, { num: 9 }));
+// function printDoubleLength<T extends Lengthy>(thing:T):number{
+//     return thing.length * 2;
+// }
+function printDoubleLength(thing) {
+    return thing.length * 2;
+}
+printDoubleLength("asdasd");
+printDoubleLength(234);
+function makeEmptyArray() {
+    return [];
+}
+var nums = makeEmptyArray();
+var bools = makeEmptyArray();
+var VideoPlaylist = /** @class */ (function () {
+    function VideoPlaylist() {
+        this.videos = [];
+    }
+    return VideoPlaylist;
+}());
+var Playlist = /** @class */ (function () {
+    function Playlist() {
+        this.queue = [];
+    }
+    Playlist.prototype.add = function (el) {
+        this.queue.push(el);
+    };
+    return Playlist;
+}());
+var songs = new Playlist();
+var videos = new Playlist();
+videos.add();
