@@ -27,6 +27,7 @@ function getRandomElement(list) {
 }
 console.log(getRandomElement(["a", "b", "c"]));
 getRandomElement([5, 6, 21, 354, 567, 234, 654]);
+getRandomElement([1, 2, 3, 4]);
 // [4, 5, 6, 7]
 // [true, false, true]
 // [{}, {}, {}]

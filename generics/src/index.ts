@@ -36,13 +36,15 @@ function identity<T>(item: T): T {
 // identity<string>("hello");
 // identity<Cat>()
 
-function getRandomElement<T>(list:T []):T {
+function getRandomElement<T>(list: T[]): T {
     const randIxd = Math.floor(Math.random() * list.length);
     return list[randIxd];
 }
 
-console.log(getRandomElement<string>(["a","b","c"]));
-getRandomElement<number>([5,6,21,354,567,234,654])
+console.log(getRandomElement<string>(["a", "b", "c"]));
+getRandomElement<number>([5, 6, 21, 354, 567, 234, 654]);
+
+getRandomElement([1, 2, 3, 4]);
 // [4, 5, 6, 7]
 // [true, false, true]
 // [{}, {}, {}]
