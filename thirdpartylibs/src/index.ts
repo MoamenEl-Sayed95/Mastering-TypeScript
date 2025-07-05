@@ -1,5 +1,6 @@
 import axios from "axios";
-import _ from "loadash";
+import _ from "lodash";
+
 interface User {
     id: number;
     name: string;
