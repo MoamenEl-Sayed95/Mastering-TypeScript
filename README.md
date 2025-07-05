@@ -18,4 +18,12 @@
 
 9- Mini Project - The DOM, Type Assertions & More.
 
-10- Classes
+10- JavaScript Classes.
+
+11- TypeScript Classes.
+
+12- Generics.
+
+13- Type Narrowing.
+
+14- Type Declartions.
