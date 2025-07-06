@@ -27,3 +27,7 @@
 13- Type Narrowing.
 
 14- Type Declartions.
+
+15- Webpack TypeScript
+
+16- React & TypeScript
